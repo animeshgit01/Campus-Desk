@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Campus Desk</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Campus Desk</h1>
+    <div>
+      <span id="user"></span>
+      <button class="light" id="logout">Logout</button>
+    </div>
+  </header>
+
+  <main>
+    <nav>
+      <button class="tab active" data-table="students">Students</button>
+      <button class="tab" data-table="courses">Courses</button>
+      <button class="tab" data-table="faculty">Faculty</button>
+    </nav>
+
+    <section class="card">
+      <h2 id="title"></h2>
+      <form id="form"></form>
+    </section>
+
+    <section class="card table-wrap">
+      <table>
+        <thead id="thead"></thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
